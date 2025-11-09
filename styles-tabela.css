@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    text-rendering: optimizeLegibility;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input, button, textarea, select {
+    font: inherit;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+h1, h2, h3 {
+    color: antiquewhite;
+}
+
+.tabela {
+    min-height: 70vh;
+}
+
+table {
+    color: antiquewhite;
+    border: white solid 1px;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+}
+
+thead > tr >th {
+    border: aliceblue solid 1px;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+tbody > tr >td {
+    border: aliceblue solid 1px;
+    border-collapse: collapse;
+    padding: 10px;
+}
