@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 3 - Curso em Vídeo</title>
+    <link rel="stylesheet" href="../styles/styles-tabela.css">
+</head>
+
+<body>
+    <header>
+        <h1>Módulo 3 do Curso em Vídeo</h1>
+        <h3 class="descricao">Este módulo aborda plano de fundo e tabelas</h3>
+    </header>
+
+    <section id="s-titulo">
+        <h2>Tabela</h2>
+        <h3 class="autor">Exercício de fixação</h3>
+    </section>
+    <section class="tabelas">
+        <div class="tabela">
+            <table>
+                <!--Trabalha com um grupos de counas (Ou linhas, rowsgroup)-->
+                <colgroup>
+                    <col>
+                    <col class="azul" span="2">
+                </colgroup>
+                
+                <caption>Tabela Exemplo</caption>
+
+                <thead>
+                    <tr>
+                        <!--Colspan representa quantas colinas essa "celula titulo" abrange. Scope informa que esse cabeçalho se refere a um grupo de colunas-->
+                        <th colspan="3" scope="colgroup">Exemplos</th>
+                    </tr>
+                    <tr>
+                        <!-- scope indica se o "titulo" (th) é da coluna ou linha-->
+                        <th scope="col">Números</th>
+                        <th scope="col">Letras</th>
+                        <th scope="col">Caracteres</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>A</td>
+                        <td>!</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>B</td>
+                        <td>@</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>C</td>
+                        <td>#</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">4</td>
+
+                        <td>D$</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>E</td>
+                        <td rowspan="2">%¨</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>F</td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </section>
+    <footer>
+        <a href="../index.html" class="backpage">>Ver exercicio sobre plano de fundo >></a>
+        <p>Práticando: <a href="https://cursoemvideo.com">Curso Em Vídeo</a> - Módulo 3</p>
+    </footer>
+
+</body>
+
+</html>

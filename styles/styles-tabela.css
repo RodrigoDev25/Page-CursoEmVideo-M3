@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    display: flex;
+
+    /* Um embaixo do outro */
+    flex-direction: column;
+
+    /* Centraliza na horizontal */
+    align-items: center;
+
+    /*centraliza na vertical. altura total */
+    justify-content: center;
+
+    /*ocupa a tela toda */
+    min-height: 100vh;
+
+
+    text-rendering: optimizeLegibility;
+    background-color: black;
+
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+h1,
+h2,
+h3 {
+    color: antiquewhite;
+}
+
+caption {
+    border: antiquewhite solid 1px;
+}
+
+.tabela {
+    /*Deixa tabela(apenas a tabela) com scroll lateral*/
+    overflow-x: auto;
+    /*  Aqui é o segredo */
+    max-width: 90vw; /*👈*/
+}
+
+table {
+
+    margin-top: 10px;
+    width: 800px;
+    color: antiquewhite;
+    border: white solid 1px;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+}
+
+thead>tr>th {
+    border: aliceblue solid 1px;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+/*Colorindo linhas pares("even". Para impares "odd". Ou ainda "2n" ou "2n-1")*/
+tbody>tr:nth-child(even) {
+    background-color: gray;
+}
+
+tbody>tr>td {
+    border: aliceblue solid 1px;
+    border-collapse: collapse;
+    position: relative;
+    padding: 10px;
+}
+
+.azul {
+    background-color: blue;
+}
+
